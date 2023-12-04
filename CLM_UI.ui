@@ -52,10 +52,10 @@ font : bold</string>
          <enum>QFrame::NoFrame</enum>
         </property>
         <property name="text">
-         <string> 문서경로</string>
+         <string>문서경로</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -207,10 +207,10 @@ font : bold</string>
          <enum>QFrame::NoFrame</enum>
         </property>
         <property name="text">
-         <string> 시트명</string>
+         <string>시트명</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -279,7 +279,7 @@ font : bold</string>
         </property>
         <property name="maximumSize">
          <size>
-          <width>55</width>
+          <width>23</width>
           <height>16777215</height>
          </size>
         </property>
@@ -287,18 +287,17 @@ font : bold</string>
          <font>
           <family>맑은 고딕</family>
           <pointsize>9</pointsize>
-          <weight>75</weight>
+          <weight>50</weight>
           <italic>false</italic>
-          <bold>true</bold>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(47, 117, 181);
-color: rgb(255, 255, 255);
-font: bold</string>
+color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>새로고침</string>
+         <string>↺</string>
         </property>
        </widget>
       </item>
@@ -309,7 +308,13 @@ font: bold</string>
       <item>
        <widget class="QPlainTextEdit" name="input_enableColName">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
         </property>
         <property name="placeholderText">
          <string>참조 가능한 열 이름</string>
@@ -355,10 +360,10 @@ font : bold</string>
          <enum>QFrame::NoFrame</enum>
         </property>
         <property name="text">
-         <string> 메인열명</string>
+         <string>메인열명</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -437,10 +442,10 @@ font : bold</string>
          <enum>QFrame::NoFrame</enum>
         </property>
         <property name="text">
-         <string> 참조열명</string>
+         <string>참조열명</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -558,10 +563,10 @@ font : bold</string>
          <enum>QFrame::NoFrame</enum>
         </property>
         <property name="text">
-         <string> 저장경로</string>
+         <string>저장경로</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>

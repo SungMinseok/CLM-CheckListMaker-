@@ -81,8 +81,8 @@ class WindowClass(QMainWindow, form_class) :
 
         self.combo_sheetName.clear()
         for sheet_name in sheet_names:
-            if sheet_name in ref_info_dict:
-                self.combo_sheetName.addItem(sheet_name)
+            #if sheet_name in ref_info_dict:
+            self.combo_sheetName.addItem(sheet_name)
 
 
         self.load_enablecolnames()
